@@ -10,3 +10,6 @@ jobs:
           run: |
               node -v
               npm -v
+        - name: check current directory
+          run: pwd
+          
