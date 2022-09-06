@@ -1,5 +1,5 @@
 name: shell commands
-on: [push]
+on: [issues]
 jobs:
   container-job:
     runs-on: ubuntu-latest
@@ -8,9 +8,5 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - uses: actions/download-artifact@v3
-      with:
-        name: my-artifact
-      
     - name: Display structure of downloaded files
       run: ls -R
