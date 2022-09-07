@@ -9,9 +9,8 @@ jobs:
     - name: executing remote ssh commands using password
       uses: garygrossgarten/github-action-ssh@release
       with:
- 
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: 22
-        script: whoami
+        command: whoami
