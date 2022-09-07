@@ -10,6 +10,6 @@ jobs:
         uses: fifsky/ssh-action@master
         with:
           command: ls -la
-          host: ${{ secrets.HOST }}
+          host: 139.177.197.133
           user: root
           key: ${{ secrets.PRIVATE_KEY}}
