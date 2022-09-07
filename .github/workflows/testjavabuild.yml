@@ -9,7 +9,5 @@ jobs:
       - name: ls -a via ssh
         uses: fifsky/ssh-action@master
         with:
-          command: ls -la
-          host: 139.177.197.133
-          user: root
-          key: ${{ secrets.PRIVATE_KEY}}
+          command: ping 139.177.197.133
+         
